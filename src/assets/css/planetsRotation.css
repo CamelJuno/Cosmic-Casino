@@ -1,0 +1,142 @@
+.planet1 {
+    --d: 200px;
+    width: var(--d);
+    height: var(--d);
+    display: inline-block;
+    margin: 5px;
+    border-radius: 50%;
+    background:
+        url(../images/Planet1.svg);
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+    left: 14px;
+    transform: rotate3d(1, -5, 0, 192deg);
+}
+
+/* Planeta 2 ---------------------*/
+.planet2 {
+    --d: 200px;
+    width: var(--d);
+    height: var(--d);
+    display: inline-block;
+    margin: 5px;
+    border-radius: 50%;
+    background:
+        url(../images/Planet2.svg);
+    background-size: cover;
+    position: absolute;
+    top: -10%;
+    right: 20%;
+    box-shadow: -40px -20px 0 0 rgba(0, 0, 0, 0.15) inset,
+        -70px -20px 0 0 rgba(0, 0, 0, 0.1) inset;
+    transform: rotate3d(-5, -5, 0, 192deg);
+}
+
+/* Planeta 4 ---------------------*/
+.planet4 {
+    --d: 200px;
+    width: var(--d);
+    height: var(--d);
+    display: inline-block;
+    margin: 5px;
+    background:
+        url(../images/Planet4.svg);
+    background-size: cover;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    transform: rotate3d(10, 5, 0, 192deg);
+}
+
+/* Planeta 5 ---------------------*/
+.planet5 {
+    --d: 200px;
+    width: var(--d);
+    height: var(--d);
+    display: inline-block;
+    margin: 5px;
+    background:
+        url(../images/Planet5.svg);
+    background-size: cover;
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    transform: rotate3d(10, 5, 0, 192deg);
+}
+
+/* Planeta 6 ---------------------*/
+.planet6 {
+    --d: 500px;
+    width: var(--d);
+    height: var(--d);
+    display: inline-block;
+    margin: 5px;
+    border-radius: 50%;
+    background:
+        url(../images/Planet6.svg);
+    background-size: cover;
+    position: absolute;
+    top: -20%;
+    bottom: 5%;
+    right: -10%;
+    transform: rotate3d(10, 5, 0, 192deg);
+}
+
+/* SpaceRocks ---------------------*/
+.SpaceRocks {
+    --d: 400px;
+    width: var(--d);
+    height: var(--d);
+    display: inline-block;
+    margin: 5px;
+    background:
+        url(../images/SpaceRocks.png);
+    animation: bouge 6s infinite alternate-reverse;
+    background-size: cover;
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+}
+
+@keyframes bouge {
+    from {
+        transform: translateY(0px) rotate(15deg);
+    }
+
+    to {
+        transform: translateY(90px) rotate(30deg);
+    }
+}
+
+/* FallingStars ---------------------*/
+.FallingStars {
+    --d: 300px;
+    width: var(--d);
+    height: var(--d);
+    display: inline-block;
+    margin: 1px;
+    background:
+        url(../images/FallingStars.svg);
+    animation: falling2 10s infinite linear;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 20%;
+}
+
+@keyframes falling2 {
+    0% {
+        -webkit-transform: translate3d(0, -300px, 0);
+    }
+
+    90% {
+        -webkit-transform: translate3d(-1500px, 700px, 0);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translate3d(-3000px, 700px, 0);
+        opacity: 0;
+    }
+}

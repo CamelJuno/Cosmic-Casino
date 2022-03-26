@@ -1,0 +1,101 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+
+:root {
+    /* Base font size */
+
+    /* Set neon color */
+    --neon-text-color: #f40;
+    --neon-border-color2: #FC32BF;
+    --neon-button-color: #ffffff;
+}
+
+.text2 {
+    padding: 0.5rem 5rem 0.3rem;
+    border: 0.4rem solid #fff;
+    border-radius: 2rem;
+    animation: flicker2 15s infinite alternate;
+}
+
+.text2:focus {
+    outline: none;
+}
+
+/* Animate neon flicker */
+@keyframes flicker2 {
+
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+
+        box-shadow:
+            0 0 .5rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 2rem var(--neon-border-color2),
+            inset 0 0 2rem var(--neon-border-color2),
+            0 0 4rem var(--neon-border-color2),
+            inset 0 0 4rem var(--neon-border-color2);
+    }
+
+    20%, 24%, 55% {
+        text-shadow: none;
+        box-shadow: none;
+    }
+}
+
+/* neon Button */
+.neonButton {
+    padding: -0.5rem 5rem 0.9rem;
+    border: 0.2rem solid #52BE80;
+}
+
+.neonButton:focus {
+    outline: none;
+}
+
+/* Animate neon flicker */
+/*@keyframes NeonButtonAnimation {
+
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+
+        box-shadow:
+            0 0 .3rem #52BE80,
+            inset 0 0 .3rem #52BE80,
+            0 0 .6rem #82E0AA,
+            inset 0 0 .6rem var(--neon-button-color),
+            0 0 1rem #82E0AA,
+            inset 0 0 1rem var(--neon-button-color);
+    }
+
+    20%, 24%, 55% {
+        text-shadow: none;
+        box-shadow: none;
+    }
+}*/
+
+/* neon Button warning */
+.neonButtonWarning {
+    padding: -0.5rem 5rem 0.3rem;
+    border: 0.2rem solid #C0392B;
+}
+
+.neonButtonWarning:focus {
+    outline: none;
+}
+
+/* Animate neon flicker */
+/*@keyframes NeonButtonAnimationWarning {
+
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+
+        box-shadow:
+            0 0 .3rem #C0392B,
+            inset 0 0 .3rem #C0392B,
+            0 0 .6rem #F1948A,
+            inset 0 0 .6rem var(--neon-button-color),
+            0 0 1rem #F1948A,
+            inset 0 0 1rem var(--neon-button-color);
+    }
+
+    20%, 24%, 55% {
+        text-shadow: none;
+        box-shadow: none;
+    }
+}*/
