@@ -12,6 +12,11 @@ const routes = [
 		path: "/jackpot",
 		exact: true,
 		render: props => <GuessTheBurn {...props} />
+	},
+	{
+		path: "/games",
+		exact: true,
+		render: props => <Gaming {...props} />
 	}
 ]
 

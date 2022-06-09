@@ -9,7 +9,6 @@ import '../../../assets/css/fallingJuno.css'
 import '../../../assets/css/flame.css'
 import Stars from '../../common/Stars'
 import { Oval } from '../../../helpers/react-loader-spinner/src/index'
-import axios from 'axios'
 import { styled } from '@mui/material/styles'
 import CheckIcon from '@mui/icons-material/Check'
 import WarningAmberIcon from '@mui/icons-material/WarningAmber'
@@ -119,13 +118,11 @@ const Banner = () => {
 						</Box>
 					</DialogContent>
 				</Dialog>
-				<Box className="planet6" />
 				<Box className="planet1" />
 				<Box className="planet2" />
 				<Box className="planet3" />
 				<Box className="planet4" />
 				<Box className="planet5" />
-				<Box className="planet6" />
 				<Box className="SpaceRocks" />
 				<Box className="FallingStars" />
 				<Box className="set">

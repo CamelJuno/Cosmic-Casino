@@ -32,7 +32,6 @@ const Banner = () => {
 				<Box className="planet3" />
 				<Box className="planet4" />
 				<Box className="planet5" />
-				<Box className="planet6" />
 				<Box className="SpaceRocks" />
 				<Box className="FallingStars" />
 				<Box className="set">
@@ -51,55 +50,23 @@ const Banner = () => {
 					<Typography variant="h6" sx={{ fontWeight: 'bold', color: "#ffffff" }}>
 						Welcome to
 					</Typography>
-					<Box component='img' src={imagesList.Title} sx={{ width: '60%' }} />
+					<Box component='img' src={imagesList.Title} sx={{ width: '80%' }} />
 					<Typography variant="h6" sx={{ fontWeight: 'bold', color: "#ffffff" }}>
 						The First Cosmos Online Toyland
 					</Typography>
-					<Box component='img' src={imagesList.Juno} sx={{ width: '5%', mt: 5 }} />
 				</Box>
-				<Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mt: 10 }}>
-					<Typography variant="h4" sx={{ fontWeight: 'bold', color: "#ffffff" }}>
-						Games
+			</Container>
+			<Container maxWidth="lg" sx={{ pb: 1, pt: 5, mt: 2 }}>
+				<Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+					<Typography variant="h3" sx={{ fontWeight: 'bold', color: "#ffffff" }}>
+						Entry Game
 					</Typography>
 				</Box>
-				<Grid container spacing={2} sx={{ mt: 4 }}>
-					<Grid item xs={12} md={6} lg={4} sm={12} xl={4}>
-						<HomeCard
-							active={true}
-							title='RAW'
-							subtitle='Guess the Burn'
-							image={imagesList.Dynamite}
-							alive='Live'
-							mes='Junø'
-							icon={imagesList.PuntoLive}
-						/>
-					</Grid>
-					<Grid item xs={12} md={6} lg={4} sm={12} xl={4}>
-						<HomeCard
-							active={false}
-							title='COSMIC'
-							subtitle='Lottery'
-							image={imagesList.Saturn}
-							alive='Soon'
-							mes='Junø'
-							icon={imagesList.PuntoSoon}
-						/>
-					</Grid>
-					<Grid item xs={12} md={6} lg={4} sm={12} xl={4}>
-						<HomeCard
-							active={false}
-							title='HUAHUA'
-							subtitle='Beach'
-							image={imagesList.Beach}
-							alive='Soon'
-							mes='Junø'
-							icon={imagesList.PuntoSoon}
-						/>
-					</Grid>
-				</Grid>
 			</Container>
 		</Container>
 	)
 }
 
 export default Banner
+
+// <RootStyle onClick={() => push('/jackpot')} className={active ? "Blazing" : null} border={false} content={false} active={active} disabled={!active}>
