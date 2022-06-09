@@ -6,7 +6,7 @@ import Banner from '../../_home/Banner'
 
 const Home = () => {
 	return (
-		<Page title="Cosmic Casino">
+		<Page title="Cosmos Arcade">
 			<Banner />
 		</Page>
 	)

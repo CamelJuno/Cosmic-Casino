@@ -1,6 +1,6 @@
-import Logo from './images/logo.png'
+import Logo from './images/Logo.png'
 import Back from './images/back.svg'
-import Title from './images/title.svg'
+import Title from './images/cosmos-arcade.png'
 import Planet1 from './images/Planet1.svg'
 import Beach from './images/Beach.svg'
 import Dynamite from './images/Dynamite.svg'
@@ -11,6 +11,7 @@ import FallingStars from './images/FallingStars.svg'
 import PuntoLive from './images/puntolive.svg'
 import PuntoSoon from './images/puntosoon.svg'
 import GuessTheBurn from './images/GuessTheBurn.png'
+
 
 const imagesList = {
 	Logo: Logo,
