@@ -73,7 +73,7 @@ const Banner = () => {
 			position: 'relative',
 			pb: 19,
 			pt: 9,
-			[breakpoints.down(1500)]: {
+			[breakpoints.down(800)]: {
 				height: 'auto'
 			}
 		}}>

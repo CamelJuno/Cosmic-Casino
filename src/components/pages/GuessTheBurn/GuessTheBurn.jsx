@@ -6,7 +6,7 @@ import Banner from '../../_guesstheburn/Banner'
 
 const GuessTheBurn = () => {
     return (
-        <Page title="Cosmic Casino">
+        <Page title="Cosmos Arcade">
             <Banner />
         </Page>
     )

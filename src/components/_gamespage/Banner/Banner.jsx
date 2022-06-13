@@ -22,7 +22,7 @@ const Banner = () => {
             position: 'relative',
             pb: 19,
             pt: 9,
-            [breakpoints.down(1200)]: {
+            [breakpoints.down(800)]: {
                 height: 'auto'
             }
         }}>
@@ -64,10 +64,10 @@ const Banner = () => {
                         <HomeCard
                             active={false}
                             title='COSMIC'
-                            subtitle='Lottery'
+                            subtitle='Coming soon'
                             image={imagesList.Saturn}
                             alive='Soon'
-                            mes='Junø'
+                            //mes='Junø'
                             icon={imagesList.PuntoSoon}
                         />
                     </Grid>
@@ -78,7 +78,7 @@ const Banner = () => {
                             subtitle='Beach'
                             image={imagesList.Beach}
                             alive='Soon'
-                            mes='Junø'
+                            //mes='Junø'
                             icon={imagesList.PuntoSoon}
                         />
                     </Grid>
