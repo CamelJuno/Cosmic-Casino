@@ -1,6 +1,7 @@
 import React, { lazy } from 'react'
 const Home = lazy(() => import('../components/pages/Home'))
 const GuessTheBurn = lazy(() => import('../components/pages/GuessTheBurn'))
+const GamesPage = lazy(() => import('../components/pages/GamesPage'))
 
 const routes = [
 	{
@@ -12,6 +13,11 @@ const routes = [
 		path: "/jackpot",
 		exact: true,
 		render: props => <GuessTheBurn {...props} />
+	},
+	{
+		path: "/games",
+		exact: true,
+		render: props => <GamesPage {...props} />
 	}
 ]
 

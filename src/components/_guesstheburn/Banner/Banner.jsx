@@ -8,8 +8,7 @@ import '../../../assets/css/planetsRotation.css'
 import '../../../assets/css/fallingJuno.css'
 import '../../../assets/css/flame.css'
 import Stars from '../../common/Stars'
-import { Oval } from  '../../../helpers/react-loader-spinner/src/index'
-import axios from 'axios'
+import { Oval } from '../../../helpers/react-loader-spinner/src/index'
 import { styled } from '@mui/material/styles'
 import CheckIcon from '@mui/icons-material/Check'
 import WarningAmberIcon from '@mui/icons-material/WarningAmber'
@@ -74,7 +73,7 @@ const Banner = () => {
 			position: 'relative',
 			pb: 19,
 			pt: 9,
-			[breakpoints.down(1500)]: {
+			[breakpoints.down(800)]: {
 				height: 'auto'
 			}
 		}}>
@@ -88,7 +87,7 @@ const Banner = () => {
 					open={openDialog}
 					onClose={() => setOpenDialog(false)}
 				>
-					
+
 					<DialogContent className={error ? 'neonButtonWarning' : 'neonButton'} onClick={() => setOpenDialog(false)}>
 						<Box
 							sx={{
@@ -100,12 +99,12 @@ const Banner = () => {
 						>
 							<Box noValidate>
 								{success &&
-									<Typography color='green' variant='subtitle2' sx={{fontWeight: 'bold'}}>
+									<Typography color='green' variant='subtitle2' sx={{ fontWeight: 'bold' }}>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 									</Typography>
 								}
 								{error &&
-									<Typography color='red' variant='subtitle2' sx={{fontWeight: 'bold'}}>
+									<Typography color='red' variant='subtitle2' sx={{ fontWeight: 'bold' }}>
 										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 									</Typography>
 								}
@@ -119,13 +118,11 @@ const Banner = () => {
 						</Box>
 					</DialogContent>
 				</Dialog>
-				<Box className="planet6" />
 				<Box className="planet1" />
 				<Box className="planet2" />
 				<Box className="planet3" />
 				<Box className="planet4" />
 				<Box className="planet5" />
-				<Box className="planet6" />
 				<Box className="SpaceRocks" />
 				<Box className="FallingStars" />
 				<Box className="set">
@@ -189,7 +186,7 @@ const Banner = () => {
 					<Typography variant="h5" sx={{ fontWeight: 'bold', color: "#ffffff", mt: 2 }}>
 						Guess the final amount of RAW to burn
 					</Typography>
-					<Typography variant="h5" sx={{ fontWeight: 'bold', color: "#ffffff"}}>
+					<Typography variant="h5" sx={{ fontWeight: 'bold', color: "#ffffff" }}>
 						Bet window is from Mar 7 to Mar 24
 					</Typography>
 					<Typography variant="h5" sx={{ fontWeight: 'bold', color: "#ffffff" }}>
@@ -197,10 +194,10 @@ const Banner = () => {
 					</Typography>
 					<Stack sx={{ fontWeight: 'bold', mt: 9 }} direction='row' spacing={1} alignItems='center' justifyContent={'center'}>
 						<Typography variant="h4" sx={{ fontWeight: 'bold', color: "#ffffff" }}>
-							Final 
+							Final
 						</Typography>
-						<Typography variant="h4" sx={{ fontWeight: 'bold' , color: "#FFCF52" }}>
-							RAW 
+						<Typography variant="h4" sx={{ fontWeight: 'bold', color: "#FFCF52" }}>
+							RAW
 						</Typography>
 						<Typography variant="h4" sx={{ fontWeight: 'bold', color: "#ffffff" }}>
 							Burned
@@ -218,10 +215,10 @@ const Banner = () => {
 						onChange={onChange}
 					/>
 					{!betting &&
-					<Button onClick={startBetting} color='primary' variant='contained' sx={{ mt: 4, borderRadius: 16, transform: 'scale(1.5)' }}>Bet For 10 Juno</Button>
+						<Button onClick={startBetting} color='primary' variant='contained' sx={{ mt: 4, borderRadius: 16, transform: 'scale(1.5)' }}>Bet For 10 Juno</Button>
 					}
 					{betting &&
-					<Button disabled={true} color='primary' variant='contained' sx={{ mt: 4, borderRadius: 16, transform: 'scale(1.5)' }}><Oval color="#FFFFFF" height={20} width={20} /></Button>
+						<Button disabled={true} color='primary' variant='contained' sx={{ mt: 4, borderRadius: 16, transform: 'scale(1.5)' }}><Oval color="#FFFFFF" height={20} width={20} /></Button>
 					}
 				</Box>
 			</Container>
